@@ -26,17 +26,22 @@
       }
       #ui {
         position: absolute;
-        bottom: 20px;
-        left: 20px;
+        bottom: 80px; /* 距離底部 80px */
+        left: 50%;
+        transform: translateX(-50%); /* 強制水平置中 */
         z-index: 10;
       }
       #dataInput {
-        padding: 10px;
-        width: 300px;
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid white;
+        padding: 15px 25px;
+        width: 600px; /* 設定寬度 */
+        height: 50px; /* 設定高度 */
+        background: rgba(255, 255, 255, 0.05); /* 微透明背景 */
+        border: 1px solid rgba(255, 255, 255, 0.3); /* 細緻邊框 */
         color: white;
-        font-family: monospace;
+        font-family: "Courier New", monospace;
+        font-size: 20px; /* 字體放大 */
+        outline: none; /* 移除點擊時的藍框 */
+        border-radius: 4px; /* 微圓角 */
       }
       #floatingText {
         position: absolute;
